@@ -123,6 +123,24 @@
     transition: transform .15s ease, box-shadow .15s ease;
   }
   .btn-main:hover{ transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,229,255,.35); }
+  .btn-secondary{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background: transparent;
+    color: var(--paper);
+    border: 1px solid var(--line);
+    font-family:'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-weight:600;
+    font-size:15px;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration:none;
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  .btn-secondary:hover{ transform: translateY(-2px); border-color: var(--sunset-1); }
   .price-tag{
     font-family:'Oswald', sans-serif;
     font-size: 15px;
@@ -349,6 +367,12 @@
   }
   .contact h2{ font-size: clamp(28px,5vw,42px); margin-bottom: 16px; }
   .contact p{ color: var(--paper-dim); margin-bottom: 32px; }
+  .contact-links{
+    display:flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .tg-btn{
     display:inline-flex;
     align-items:center;
@@ -366,6 +390,24 @@
     transition: transform .15s ease;
   }
   .tg-btn:hover{ transform: translateY(-2px); }
+  .info-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    background: transparent;
+    color: var(--paper);
+    border: 1px solid var(--line);
+    font-family:'Oswald', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    font-weight:600;
+    padding: 16px 34px;
+    border-radius: 8px;
+    text-decoration:none;
+    font-size: 15px;
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  .info-btn:hover{ transform: translateY(-2px); border-color: var(--sunset-1); }
 
   footer{
     text-align:center;
@@ -391,6 +433,7 @@
     <p class="sub">Продаю аккаунт для Steam. это один общий аккаунт не твой личный аккаунт, без очередей. Плюс подробная инструкция, как без проблем играть в автономном режиме.</p>
     <div class="hero-cta">
       <a class="btn-main" href="https://funpay.com/users/15497262/" target="_blank" rel="noopener">Написать на FunPay →</a>
+      <a class="btn-secondary" href="https://938494949330.github.io/forza-shop2/" target="_blank" rel="noopener">Дополнительная информация</a>
       <span class="price-tag">Цена: <b>в зависимсти от протформы на фанпей 20р </b></span>
     </div>
   </div>
@@ -499,11 +542,14 @@
   <div class="wrap">
     <h2>Готовы начать гонку?</h2>
     <p>Пишите мне на фанпей где я вам и помогу.</p>
-    <a class="tg-btn" href="https://funpay.com/users/15497262/" target="_blank" rel="noopener">FunPay: Nepridumal1233</a>
+    <div class="contact-links">
+      <a class="tg-btn" href="https://funpay.com/users/15497262/" target="_blank" rel="noopener">FunPay: Nepridumal1233</a>
+      <a class="info-btn" href="https://938494949330.github.io/forza-shop2/" target="_blank" rel="noopener">Дополнительная информация</a>
+    </div>
   </div>
 </section>
 
-<footer>Продажа лицензионных ключей · связь только через FunPay</footer>
+<footer> связь только через FunPay</footer>
 
 <script>
 (function(){
